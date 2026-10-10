@@ -39,8 +39,8 @@ Interface Web & Visualização: Streamlit, Seaborn, Matplotlib
 
 Deploy & Versionamento: Git, GitHub, Streamlit Community Cloud
 
-📂 Estrutura do Repositório
-Plaintext
+## 📂 Estrutura do Repositório
+```text
 analise-software-dados/
 │
 ├── imagens/
@@ -54,6 +54,7 @@ analise-software-dados/
 │   └── requirements.txt            # Dependências fixas do projeto
 ├── fintech_integrada.db            # Base de dados relacional consolidada
 └── README.md                       # Documentação técnica do projeto
+
 🚀 Como Executar o Projeto Localmente
 Siga os passos abaixo para clonar e rodar a aplicação na sua máquina:
 
