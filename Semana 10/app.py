@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import joblib
 import pandas as pd
 import streamlit as st
@@ -18,12 +19,14 @@ st.markdown(
     " estudantes e predição de despesas."
 )
 
-# Caminhos
-CAMINHO_DB = "fintech_integrada.db"
-CAMINHO_MODELO = "modelo_despesas.joblib"
+# Mapeamento robusto do diretório utilizando Pathlib para compatibilidade total com o Streamlit Cloud
+DIRETORIO_ATUAL = Path(__file__).parent
 
-df = carregar_dados_sqlite(CAMINHO_DB)
-modelo = carregar_modelo_ml(CAMINHO_MODELO)
+CAMINHO_DB = DIRETORIO_ATUAL / "fintech_integrada.db"
+CAMINHO_MODELO = DIRETORIO_ATUAL / "modelo_despesas.joblib"
+
+df = carregar_dados_sqlite(str(CAMINHO_DB))
+modelo = carregar_modelo_ml(str(CAMINHO_MODELO))
 
 if df is not None and modelo is not None:
   st.sidebar.header("Filtros de Navegação")
@@ -42,11 +45,19 @@ if df is not None and modelo is not None:
     st.subheader(f"Métricas para a categoria: {categoria_selecionada}")
     col1, col2, col3 = st.columns(3)
     col1.metric(
-        "Total Gasto", f"R$ {df_filtrado['valor'].sum():,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        "Total Gasto",
+        f"R$ {df_filtrado['valor'].sum():,.2f}"
+        .replace(",", "X")
+        .replace(".", ",")
+        .replace("X", "."),
     )
     col2.metric("Número de Registros", len(df_filtrado))
     col3.metric(
-        "Média por Lançamento", f"R$ {df_filtrado['valor'].mean():,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        "Média por Lançamento",
+        f"R$ {df_filtrado['valor'].mean():,.2f}"
+        .replace(",", "X")
+        .replace(".", ",")
+        .replace("X", "."),
     )
 
     st.markdown("### Amostra de Dados Limpos")
@@ -78,7 +89,8 @@ if df is not None and modelo is not None:
         st.success(
             f"✨ O valor estimado para a próxima despesa em"
             f" **{categoria_selecionada}** é de: **R$"
-            f" {valor_previsto:,.2f}**".replace(",", "X")
+            f" {valor_previsto:,.2f}**"
+            .replace(",", "X")
             .replace(".", ",")
             .replace("X", ".")
         )
@@ -86,7 +98,7 @@ if df is not None and modelo is not None:
         st.error(f"Erro ao processar a predição: {ex}")
 else:
   st.warning(
-      "⚠️ O banco de dados (`fintech_integrada.db`) ou o modelo"
-      " (`modelo_despesas.joblib`) não foram encontrados nos caminhos"
-      " especificados."
+      f"⚠️ O banco de dados (`fintech_integrada.db`) ou o modelo"
+      f" (`modelo_despesas.joblib`) não foram encontrados no diretório"
+      f" especificado:\n- Caminho testado: `{DIRETORIO_ATUAL}`"
   )
