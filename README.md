@@ -21,9 +21,9 @@ O projeto segue uma arquitetura modular inspirada nas melhores práticas de dese
 
 ```mermaid
 graph TD
-    A[API Externa / Dados Brutos] -->|Wrangling & Limpeza| B[Pandas / Python]
+    A[API Externa e Dados Brutos] -->|Wrangling e Limpeza| B[Pandas e Python]
     B -->|Persistência| C[(Banco SQLite)]
-    B -->|Treinamento & Serialização| D[Scikit-Learn / .joblib]
+    B -->|Treinamento e Serialização| D[Scikit-Learn e joblib]
     C -->|Consulta SQL Segura| E[Streamlit Interface]
     D -->|Predição em Tempo Real| E
 ⚙️ Tecnologias Utilizadas
