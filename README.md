@@ -25,7 +25,9 @@ graph TD
     B -->|Persistência| C[(Banco SQLite)]
     B -->|Treinamento e Serialização| D[Scikit-Learn e joblib]
     C -->|Consulta SQL Segura| E[Streamlit Interface]
-    D -->|Predição em Tempo Real| E```
+    D -->|Predição em Tempo Real| E
+```
+
 ⚙️ Tecnologias Utilizadas
 Linguagem: Python 3.10+
 
