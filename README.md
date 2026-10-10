@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([Insira aqui o link do seu app])
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://semana2010-h7zh6utrdphuwzznb6q688.streamlit.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Um ecossistema completo de engenharia e ciência de dados desenvolvido para auxiliar estudantes universitários no controle orçamentário e na predição inteligente de despesas futuras.
@@ -69,8 +69,7 @@ streamlit run app.py
 🌐 Acesse o aplicativo online: [Clique aqui para testar a Fintech Acadêmica no ar!]([Insira aqui o link do seu app])
 👤 Autor
 Desenvolvido por Silas
-Estudante de Matemática e Administrador de Sistemas Moodle
-LinkedIn
+Estudante de Matemática
 | GitHub
 
 ---
