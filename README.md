@@ -80,7 +80,7 @@ Painel Executivo: Gráficos dinâmicos segmentados por categorias de despesa, m�
 
 Simulador Preditivo: Interface interativa onde o usuário insere a sua média histórica de gastos para estimar o valor da próxima despesa com base no modelo de Machine Learning integrado.
 
-🌐 Acesse o aplicativo online: Clique aqui para testar a Fintech Acadêmica no ar!
+🌐 **Acesse o aplicativo online:** [Clique aqui para testar a Fintech Acadêmica no ar!](https://semana2010-h7zh6utrdphuwzznb6q688.streamlit.app)
 
 👤 Autor
 Desenvolvido por Silas
