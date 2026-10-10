@@ -28,16 +28,16 @@ graph TD
     D -->|Predição em Tempo Real| E
 ```
 
----
+⚙️ Tecnologias Utilizadas
+Linguagem: Python 3.10+
 
-## ⚙️ Tecnologias Utilizadas
-* **Linguagem:** Python 3.10+
-* **Engenharia de Dados & Wrangling:** Pandas, NumPy, SQLite
-* **Machine Learning:** Scikit-Learn (Regressão Linear, One-Hot Encoding, Métricas MAE), Joblib
-* **Interface Web & Visualização:** Streamlit, Seaborn, Matplotlib
-* **Deploy & Versionamento:** Git, GitHub, Streamlit Community Cloud
+Engenharia de Dados & Wrangling: Pandas, NumPy, SQLite
 
----
+Machine Learning: Scikit-Learn (Regressão Linear, One-Hot Encoding, Métricas MAE), Joblib
+
+Interface Web & Visualização: Streamlit, Seaborn, Matplotlib
+
+Deploy & Versionamento: Git, GitHub, Streamlit Community Cloud
 
 ## 📂 Estrutura do Repositório
 ```text
@@ -54,45 +54,35 @@ analise-software-dados/
 │   └── requirements.txt            # Dependências fixas do projeto
 ├── fintech_integrada.db            # Base de dados relacional consolidada
 └── README.md                       # Documentação técnica do projeto
-```
 
----
-
-## 🚀 Como Executar o Projeto Localmente
-
+🚀 Como Executar o Projeto Localmente
 Siga os passos abaixo para clonar e rodar a aplicação na sua máquina:
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/alunosilaspo/analise-software-dados.git
-   cd analise-software-dados
-   ```
+Clone o repositório:
 
-2. **Entre na pasta da aplicação:**
-   ```bash
-   cd "Semana 10"
-   ```
+Bash
+git clone [https://github.com/alunosilaspo/analise-software-dados.git](https://github.com/alunosilaspo/analise-software-dados.git)
+cd analise-software-dados
+Entre na pasta da aplicação:
 
-3. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Bash
+cd "Semana 10"
+Instale as dependências:
 
-4. **Execute o aplicativo Streamlit:**
-   ```bash
-   streamlit run app.py
-   ```
+Bash
+pip install -r requirements.txt
+Execute o aplicativo Streamlit:
 
----
+Bash
+streamlit run app.py
+📊 Demonstração Funcional
+Painel Executivo: Gráficos dinâmicos segmentados por categorias de despesa, métricas de soma total e ticket médio por lançamento.
 
-## 📊 Demonstração Funcional
-* **Painel Executivo:** Gráficos dinâmicos segmentados por categorias de despesa, métricas de soma total e ticket médio por lançamento.
-* **Simulador Preditivo:** Interface interativa onde o usuário insere a sua média histórica de gastos para estimar o valor da próxima despesa com base no modelo de Machine Learning integrado.
+Simulador Preditivo: Interface interativa onde o usuário insere a sua média histórica de gastos para estimar o valor da próxima despesa com base no modelo de Machine Learning integrado.
 
 🌐 **Acesse o aplicativo online:** [Clique aqui para testar a Fintech Acadêmica no ar!](https://semana2010-h7zh6utrdphuwzznb6q688.streamlit.app)
 
----
+👤 Autor
+Desenvolvido por Silas
 
-## 👤 Autor
-Desenvolvido por **Silas**  
-*Estudante de Matemática*
+Estudante de Matemática
