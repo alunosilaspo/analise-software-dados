@@ -74,11 +74,3 @@ LinkedIn
 | GitHub
 
 ---
-
-### Próximos Passos:
-1. Cole este conteúdo no seu arquivo `README.md` na raiz do repositório.
-2. Faça o `git add`, `git commit` e `git push` para o GitHub.
-3. Realize o deploy no **Streamlit Community Cloud** (apontando para `Semana 10/app.py`), copie o URL gerado e insira-o no local indicado do `README.md`.
-
-Com isso, o seu portfólio estará completo, extremamente técnico e pronto para impressionar qualquer recrutador ou avaliador! Se precisar de auxílio com o commit ou com o deploy, é só chamar!
-
